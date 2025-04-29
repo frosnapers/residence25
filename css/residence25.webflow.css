@@ -181,6 +181,9 @@ p {
   letter-spacing: 4px;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 40px;
   font-family: Kindergarten, Arial, sans-serif;
   font-size: 160px;
   line-height: 150%;
@@ -284,6 +287,10 @@ p {
 }
 
 @media screen and (min-width: 1440px) {
+  .heading {
+    padding-top: 60px;
+  }
+
   .paragraph {
     padding-bottom: 0;
     font-weight: 400;

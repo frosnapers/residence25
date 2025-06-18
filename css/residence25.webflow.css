@@ -114,6 +114,7 @@ p {
 
 .div-block.home {
   background-image: url('../images/home.jpg');
+  flex-flow: column;
 }
 
 .div-block.about {
@@ -185,7 +186,7 @@ p {
   margin-bottom: 0;
   padding-top: 40px;
   font-family: Kindergarten, Arial, sans-serif;
-  font-size: 160px;
+  font-size: 80px;
   line-height: 150%;
   display: flex;
 }
@@ -201,6 +202,10 @@ p {
   font-weight: 400;
   line-height: 130%;
   position: relative;
+}
+
+.paragraph.center {
+  text-align: center;
 }
 
 .link {
@@ -286,6 +291,35 @@ p {
   width: 1200px;
 }
 
+.cta {
+  background-color: var(--white);
+  color: #000;
+  border: 2px solid #d4d4d4;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-family: Kindergarten, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all .2s;
+  box-shadow: 0 4px 5px #0003;
+}
+
+.cta:hover {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  box-shadow: 1px 2px 4px #0003;
+}
+
+.div-apply-now {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  display: flex;
+}
+
 @media screen and (min-width: 1440px) {
   .heading {
     padding-top: 60px;
@@ -344,7 +378,7 @@ p {
   }
 
   .heading {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   .div-room {
@@ -364,6 +398,10 @@ p {
 @media screen and (max-width: 767px) {
   .sticky-bottom {
     height: 80%;
+  }
+
+  .heading {
+    font-size: 40px;
   }
 
   .paragraph, .tag-label {
